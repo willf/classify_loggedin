@@ -114,6 +114,8 @@ def token_counts(directory, json_tokenizer_config):
 
 
 def field_counts(directory):
+    """field_counts returns a counter of fields in the directory
+    """
     c = collections.Counter()
     for obj, ident, err in json_directory(directory):
         if obj:
